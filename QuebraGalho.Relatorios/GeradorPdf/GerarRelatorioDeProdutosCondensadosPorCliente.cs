@@ -90,28 +90,34 @@ public class GerarRelatorioDeProdutosCondensadosPorCliente : IDisposable
 
 
                     // Cria uma tabela com 3 colunas
-                    Table table = new Table(5);
-                    table.SetWidth(UnitValue.CreatePercentValue(100));
+                    Table tableBody = new Table(5);
+                    tableBody.SetWidth(UnitValue.CreatePercentValue(100));
 
                     // Adiciona cabeçalhos
-                    table.AddHeaderCell("CÓDIGO");
-                    table.AddHeaderCell("PRODUTO");
-                    table.AddHeaderCell("QUANTIDADE");
-                    table.AddHeaderCell("VALOR UNÍTARIO");
-                    table.AddHeaderCell("VALOR SUBTOTAL");
+                    tableBody.AddHeaderCell("CÓDIGO");
+                    tableBody.AddHeaderCell("PRODUTO");
+                    tableBody.AddHeaderCell("QUANTIDADE");
+                    tableBody.AddHeaderCell("VALOR UNÍTARIO");
+                    tableBody.AddHeaderCell("VALOR SUBTOTAL");
 
                     // Adiciona dados à tabela
                     foreach (var produto in dadosRelatorio)
                     {
-                        table.AddCell(produto.NR_ITEM.ToString());
-                        table.AddCell(produto.DS_PRODUTO_SERVICO);
-                        table.AddCell(produto.QUANTIDADE.ToString());
-                        table.AddCell(produto.VL_UNITARIO.ToString());
-                        table.AddCell(produto.VL_SUBTOTAL.ToString()); // Formata como moeda
+                        tableBody.AddCell(produto.NR_ITEM.ToString());
+                        tableBody.AddCell(produto.DS_PRODUTO_SERVICO);
+                        tableBody.AddCell(produto.QUANTIDADE.ToString());
+                        tableBody.AddCell(produto.VL_UNITARIO.ToString());
+                        tableBody.AddCell(produto.VL_SUBTOTAL.ToString()); // Formata como moeda
                     }
 
                     // Adiciona a tabela ao documento
-                    document.Add(table);
+                    document.Add(tableBody);
+
+                    Table tableFooter = new Table(4);
+                    tableFooter.SetWidth(UnitValue.CreatePercentValue(100));
+                    tableFooter.SetTextAlignment(TextAlignment.RIGHT);
+
+                    tableFooter = new Table(3);
                 }
             }
 
