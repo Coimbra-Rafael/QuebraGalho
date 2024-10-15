@@ -1,4 +1,4 @@
-﻿using QuebraGalho.Relatorios.Models;
+﻿using QuebraGalho.Core.Models;
 
 namespace QuebraGalho.Relatorios.Data.Implementations;
 

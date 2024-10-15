@@ -1,7 +1,7 @@
 ﻿using QuebraGalho.Relatorios.Data.Implementations;
 using QuebraGalho.Relatorios.Data.Persistence;
 using QuebraGalho.Relatorios.GeradorPdf;
-using QuebraGalho.Relatorios.Models;
+using QuebraGalho.Core.Models;
 using QuebraGalho.Relatorios.Services.Implementations;
 
 namespace QuebraGalho.Relatorios.Services;

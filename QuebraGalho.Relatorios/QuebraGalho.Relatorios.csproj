@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
+    <ProjectReference Include="..\QuebraGalho.Core\QuebraGalho.Core.csproj" />
   </ItemGroup>
 
 </Project>

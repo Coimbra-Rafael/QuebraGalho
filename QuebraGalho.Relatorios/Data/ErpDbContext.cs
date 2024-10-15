@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Scaffolding.Internal;
-using QuebraGalho.Relatorios.Entities;
+using QuebraGalho.Core.Entities;
 
 namespace QuebraGalho.Relatorios.Data;
 

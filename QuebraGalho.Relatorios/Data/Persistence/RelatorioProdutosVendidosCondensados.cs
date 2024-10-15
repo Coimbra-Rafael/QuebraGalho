@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using QuebraGalho.Relatorios.Data.Implementations;
-using QuebraGalho.Relatorios.Models;
+using QuebraGalho.Core.Models;
 using MySqlConnector;
 using Dapper;
 

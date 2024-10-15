@@ -3,7 +3,7 @@ using iText.Kernel.Pdf;
 using iText.Layout;
 using iText.Layout.Element;
 using iText.Layout.Properties;
-using QuebraGalho.Relatorios.Models;
+using QuebraGalho.Core.Models;
 
 namespace QuebraGalho.Relatorios.GeradorPdf;
 
