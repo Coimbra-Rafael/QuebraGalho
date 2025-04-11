@@ -186,7 +186,7 @@ namespace ServiceReference1
         {
             if ((endpointConfiguration == EndpointConfiguration.ErpWsPort))
             {
-                return new System.ServiceModel.EndpointAddress("http://192.168.3.193:8080/ERP_WEB/ErpWsService/ErpWs");
+                return new System.ServiceModel.EndpointAddress("http://192.168.3.44:8080/ERP_WEB/ErpWsService/ErpWs");
             }
             throw new System.InvalidOperationException(string.Format("Não foi possível encontrar o ponto de extremidade com o nome \'{0}\'.", endpointConfiguration));
         }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace QuebraGalho.Core.Entities;
 
-public partial class ErpLicenca
+public class ErpLicenca
 {
     public string NrLicenca { get; set; } = null!;
 

@@ -26,4 +26,4 @@ app.MapGet("/Relatorio", async ([FromServices] IRelatorioProdutosVendidosCondens
     return Results.Content("Não foi possível gerar o relátorio");
 });
 
-app.Run();
+await app.RunAsync();
