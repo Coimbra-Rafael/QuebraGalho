@@ -4,7 +4,7 @@ using var chamaWs = new ChamadaWebService();
 
 Console.WriteLine(DateTime.Now);
 
-var result = await chamaWs.EnviaWsAsync("9999T", "1", "ERP_RETORNA_PRODUTO_COMPLETO", "1");
+var result = await chamaWs.EnviaWsAsync("9999T", "1", "ERP_RETORNA_PRODUTO_PENDENTES", "c7ed4e8791b54f129cd926589481cfff");
 
 Console.WriteLine(result);
 

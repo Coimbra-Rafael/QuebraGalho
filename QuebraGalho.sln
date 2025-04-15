@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuebraGalho.ConsomeWebServi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuebraGalho.Core", "QuebraGalho.Core\QuebraGalho.Core.csproj", "{38CE0227-D69B-442C-9242-EA9C47F0814F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuebraGalho.Infrastructure", "QuebraGalho.Infrastructure\QuebraGalho.Infrastructure.csproj", "{694CC52F-8B44-4400-B40E-8926EF158F00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuebraGalho.CorrigePermissaoUsuario", "QuebraGalho.CorrigePermissaoUsuario\QuebraGalho.CorrigePermissaoUsuario.csproj", "{694CC52F-8B44-4400-B40E-8926EF158F00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuebraGalho.Infrastructure", "QuebraGalho.Infrastructure\QuebraGalho.Infrastructure.csproj", "{6412DB88-2DE3-408B-ACDF-8F9046EAAA03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuebraGalho.CorrigirProdutosCodigos", "QuebraGalho.CorrigirProdutosCodigos\QuebraGalho.CorrigirProdutosCodigos.csproj", "{3ACBEEBA-BBBA-4C7C-9220-C330D8D2351C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{694CC52F-8B44-4400-B40E-8926EF158F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{694CC52F-8B44-4400-B40E-8926EF158F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{694CC52F-8B44-4400-B40E-8926EF158F00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6412DB88-2DE3-408B-ACDF-8F9046EAAA03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6412DB88-2DE3-408B-ACDF-8F9046EAAA03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6412DB88-2DE3-408B-ACDF-8F9046EAAA03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6412DB88-2DE3-408B-ACDF-8F9046EAAA03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ACBEEBA-BBBA-4C7C-9220-C330D8D2351C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ACBEEBA-BBBA-4C7C-9220-C330D8D2351C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ACBEEBA-BBBA-4C7C-9220-C330D8D2351C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ACBEEBA-BBBA-4C7C-9220-C330D8D2351C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

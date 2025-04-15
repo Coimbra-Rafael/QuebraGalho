@@ -16,8 +16,8 @@ public sealed class ChamadaWebService : IDisposable
             var binding = new BasicHttpBinding();
             binding.MaxReceivedMessageSize = int.MaxValue;
 
-            //var endpoint = new EndpointAddress("http://santsystemsrv07.ddns.net:8087/ERP_WEB/ErpWsService/ErpWs?wsdl");
-            var endpoint = new EndpointAddress(erpWsClient.Endpoint.Address.Uri);
+            var endpoint = new EndpointAddress("http://santsystemsrv07.ddns.net:8087/ERP_WEB/ErpWsService/ErpWs?wsdl");
+            //var endpoint = new EndpointAddress(erpWsClient.Endpoint.Address.Uri);
             erpWsClient = new ErpWsClient(binding, endpoint);
             erpWsClient.InnerChannel.OperationTimeout = new TimeSpan(0, 25, 0);
             var enviaRecebeDados = new EnviaRecebeDados(new EnviaRecebeDadosBody(

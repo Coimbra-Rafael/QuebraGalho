@@ -3,10 +3,11 @@ using System.Text;
 using Dapper;
 using MySqlConnector;
 using QuebraGalho.Core.Entities;
+using QuebraGalho.Infrastructure.Repository.Implementation;
 
 namespace QuebraGalho.Infrastructure.Repository;
 
-public class PermissaoRepository : IDisposable
+public class PermissaoRepository : IPermissaoRepository
 {
     public async Task<ErpPermissao?> GetPermissao(string nrLicenca, decimal idUsuario)
     {

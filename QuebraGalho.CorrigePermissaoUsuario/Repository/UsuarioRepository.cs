@@ -3,10 +3,11 @@ using System.Text;
 using Dapper;
 using MySqlConnector;
 using QuebraGalho.Core.Entities;
+using QuebraGalho.Infrastructure.Repository.Implementation;
 
 namespace QuebraGalho.Infrastructure.Repository;
 
-public class UsuarioRepository : IDisposable
+public class UsuarioRepository : IUsuarioRepository
 {
     public async Task<IEnumerable<ErpUsuario>> GetUsuariosByLicenca(string nrLicenca)
     {
@@ -18,7 +19,7 @@ public class UsuarioRepository : IDisposable
         var selectUsuarios = new StringBuilder(
             """
                 SELECT ERP_USUARIO.ID_USUARIO as IdUsuario, ERP_USUARIO.NM_LOGIN AS NmLogin  
-                FROM ERP_USUARIO WHERE ERP_USUARIO.NR_LICENCA = @NrLicenca
+                FROM ERP_USUARIO WHERE ERP_USUARIO.NR_LICENCA = @NrLicenca AND ERP_USUARIO.DM_TIPO_USUARIO = 'S' 
             """
         );
         var parameters = new DynamicParameters();

@@ -3,7 +3,7 @@ using System.Text;
 using Dapper;
 using MySqlConnector;
 using QuebraGalho.Core.Entities;
-using QuebraGalho.Infrastructure.Repository.Interfaces;
+using QuebraGalho.Infrastructure.Repository.Implementation;
 
 namespace QuebraGalho.Infrastructure.Repository;
 
@@ -16,12 +16,7 @@ public class LicencaRepository : ILicencaRepository
         if(connection.State.Equals(ConnectionState.Closed))
             await connection.OpenAsync();
 
-        var selectLicencas = new StringBuilder(
-            """
-            SELECT ERP_LICENCA.NR_LICENCA AS NrLicenca
-            FROM ERP_LICENCA
-            """
-        );
+        var selectLicencas = new StringBuilder("SELECT ERP_LICENCA.NR_LICENCA AS NrLicenca FROM ERP_LICENCA");
         return await  connection.QueryAsync<ErpLicenca>(selectLicencas.ToString());
     }
 
